@@ -6,6 +6,8 @@ For example, if the VaR of a portfolio is $10 million with a 95% confidence leve
 
 There are several methods to calculate VaR, including the Variance-Covariance Method, the Historical Simulation Method, and the Monte Carlo Simulation Method. The choice of method depends on the characteristics of the portfolio and the goals of the risk management exercise.
 
+## Demonstration in Python
+
 ```python
 import numpy as np
 import pandas as pd
