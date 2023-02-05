@@ -32,3 +32,20 @@ plt.show()
 ```
 
 This code first loads stock price data from a CSV file into a Pandas DataFrame. The returns for the stock are calculated as the percentage change in the adjusted close price. The ```np.percentile``` function is used to calculate the VaR for a specified confidence level (in this case, 5%). The VaR is calculated as the quantile that corresponds to the specified confidence level. Finally, a histogram of the returns is plotted, and the VaR is indicated with a red vertical line.
+
+
+
+## Parametric VAR
+
+A parametric Value at Risk (VaR) plot is a graphical representation of the VaR of a portfolio over a specified time horizon and confidence level. By examining a parametric VaR plot, you can impute various characteristics about the risk profile of a portfolio, such as:
+
+```Volatility:``` The width of the VaR distribution can provide information about the volatility of the portfolio. A wider distribution indicates higher volatility, while a narrower distribution indicates lower volatility.
+
+```Skewness:``` The shape of the VaR distribution can indicate the skewness of the portfolio's returns. A symmetrical distribution indicates a balanced portfolio, while a skewed distribution indicates an imbalanced portfolio.
+
+```Confidence level:``` The height of the VaR distribution represents the confidence level. The higher the confidence level, the higher the VaR.
+
+```Tail risk:``` The tails of the VaR distribution can provide information about the tail risk of the portfolio. A long right tail indicates a high likelihood of large losses, while a long left tail indicates a high likelihood of large gains.
+
+```Concentration risk:``` The concentration of the portfolio's holdings can be revealed by examining the VaR distribution. A concentration of holdings in a single stock or sector can lead to higher portfolio risk.
+
