@@ -1,6 +1,14 @@
-# importing data
+# Dependencies
 import arch.data.sp500
+from arch import arch_model
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('ggplot') 
 
+
+
+# data
 data = arch.data.sp500.load()
 market = data["Adj Close"]
 returns = 100 * market.pct_change().dropna()
@@ -45,3 +53,4 @@ for color in np.unique(c):
     )
 ax.set_title("Parametric VaR")
 leg = ax.legend(frameon=False, ncol=3)
+plt.show()
